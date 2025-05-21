@@ -8,6 +8,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const url = "http://localhost:4000"
+    const[token,setToken] = useState("")
 
 const[list,setList] =useState({});
 const[value,setValue] =useState([]);
@@ -46,7 +47,7 @@ const[value,setValue] =useState([]);
   setList(newList);
 }, [value]);
 
-        const contextValue = {addTofavourite,list,fetchList,value,url}
+        const contextValue = {addTofavourite,list,fetchList,value,url,token,setToken}
 
       return(
         <StoreContext.Provider value={contextValue}>

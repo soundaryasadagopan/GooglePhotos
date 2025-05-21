@@ -6,11 +6,7 @@ const mongoose = require("mongoose");
     favorite: { type: Boolean, default: false },
    description:{type:String,required:true},
     uploadTime: { type: Date, default: Date.now},
-    userId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "user", 
-    required: true
-  }
+    
  })
  
  photoSchema.index({ title: 'text', description: 'text' });

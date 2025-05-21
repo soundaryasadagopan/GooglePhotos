@@ -24,11 +24,14 @@ const AddPhoto = ({url}) => {
         formData.append("description",data.description)
 
         formData.append("image",image)
-        const response = await axios.post(`${url}/api/photo/addphoto`,formData);
+        const token = localStorage.getItem("token");
+        const response = await axios.post(`${url}/api/photo/addphoto`,formData,
+        );
         if(response.data.success){
-           setData({ name:"",
-                description:"",
-                title:""
+          console.log("response",response.data.success)
+           setData({
+               title:"",
+                description:""
               })
             setImage(false)
             console.log(response.data.message)

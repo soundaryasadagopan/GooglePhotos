@@ -1,7 +1,11 @@
-import React from 'react'
+import React ,{useContext}from 'react'
 import './NavBar.css'
 import { assets } from '../assets/assets'
+import { StoreContext } from '../context/StoreContextProvider';
+
 const NavBar = ({setShowLogin}) => {
+    const{token} =useContext(StoreContext);
+  
   return (
     <div className='nav'>
      <div className="nav-left">

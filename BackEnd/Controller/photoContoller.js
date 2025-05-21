@@ -8,7 +8,6 @@ const{title,description} = req.body
         image:imageFile,
         title,
         description,
-        userId: req.user._id ,
         UploadTime : new Date()
     })
 
