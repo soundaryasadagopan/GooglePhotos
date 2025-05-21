@@ -1,0 +1,85 @@
+.viewphoto{
+    width:70%;
+    margin-top: 40px;
+    margin-left: max(5vw,25px);
+    font-size: 18px;
+    color:grey;
+    
+}
+form{
+    gap:20px;
+}
+.add-btn{
+    margin:10px;
+    max-width: 120px;
+    border:none;
+    background-color: rgb(226, 205, 205);
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor:pointer;
+    padding: 10px 15px;
+}
+.view {
+  padding: 20px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.photo-item .photo-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.photo-item .add-icon{
+    position:absolute;
+    bottom:15px;
+    right:15px;
+    cursor:pointer;
+    border-radius:50%;
+}
+.search-box{
+  padding:10px;
+  margin:20px;
+}
+
+
+.photo-grid{
+    position:relative;
+}
+
+.photo-item {
+  position: relative;
+}
+
+.photo-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: block;
+}
+
+.add-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.add-ic{
+    color:brown
+}
+

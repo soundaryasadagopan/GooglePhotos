@@ -1,0 +1,25 @@
+.add{
+    width:70%;
+    margin-top: 40px;
+    margin-left: max(5vw,25px);
+    font-size: 18px;
+    color:grey
+}
+form{
+    gap:20px;
+}
+.add-btn{
+    margin:10px;
+    max-width: 120px;
+    border:none;
+    background-color: tomato;
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor:pointer;
+    padding: 10px 15px;
+}
+.form-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
